@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: Freight big pro;
+}
+
+html,
+body {
+    max-width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    max-width: 100vw;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+    border-bottom: 1px solid #414141;
+}
+
+h1 {
+    font-size: 3vw;
+    font-weight: 400;
+    font-family: serif;
+    color: #000;
+}
+
+.part2 {
+    display: flex;
+    gap: 4vw;
+}
+
+h4 {
+    cursor: pointer;
+    color: #000;
+    font-size: serif;
+    font-size: 1.5vw;
+    font-weight: 200;
+}
+
+#contact-btn {
+    background-color: #F27793;
+    color: #111;
+    padding: 0.5vw 1vw;
+    border: none;
+    border-radius: 0.6vw;
+    font-size: 1.6vw;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+i {
+    display: none;
+}
+
+.content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+}
+
+
+.left {
+    height: 100%;
+    width: 55%;
+    padding: 10vw 3.4vw;
+}
+
+.left h1 {
+    font-size: 4vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+
+}
+
+.left h1 span {
+    color: #F27793;
+    font-style: italic;
+
+}
+
+.left p {
+    color: #414141;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+#cvBtn {
+    background-color: #F27793;
+    color: #111;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 0.6vw;
+    font-size: 1.7vw;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.right {
+    width: 45%;
+    height: 100%;
+    background-size: cover;
+
+}
+
+#full {
+    height: 100%;
+    width: 40%;
+    background-color: #f2779441;
+    position: absolute;
+    padding: 0vw 2vw;
+    top: 0;
+    right: -40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7vw;
+    backdrop-filter: bllur(12px);
+
+}
+
+#full h4 {
+    font-size: 7vw;
+
+}
+
+#full i {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-weight: 500;
+    padding: 6px;
+    font-size: 8vw;
+    cursor: pointer;
+}
+
+#full button {
+    display: block;
+    font-size: 4.7vw;
+    padding: 2vw 4vw;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+
+    body{
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    h4,
+    #contact-btn {
+        display: none;
+    }
+
+    i {
+        display: block;
+        font-size: 4.3vw;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    #full h4 {
+        display: block;
+
+    }
+
+    .content {
+
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height: 50%;
+    }
+
+    .left h1 {
+        font-size: 10vw;
+
+    }
+
+    .left p {
+        font-size: 4.5vw;
+        line-height: 5.8vw;
+        margin: 5vw 0;
+    }
+
+    #cvBtn {
+        font-size: 6vw;
+        padding: 2vw 4vw;
+    }
+
+    .right {
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+
+    .right img {
+        max-width: 80%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+    }
+}

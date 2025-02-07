@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Responsiveness</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>HOORIYA</h1>
+        <div class="part2">
+            <h4>Home</h4>
+            <h4>About Me</h4>
+            <h4>Skills</h4>
+            <h4>Projects</h4>
+            <button id="contact-btn">Contact Me</button>
+            <i class="ri-menu-3-line" id="menu"></i>
+        </div>
+    </nav>
+
+    <!--sidebar for small devices-->
+    <div id="full">
+        <i class="ri-close-circle-line"></i>
+        <h4>Home</h4>
+        <h4>About Me</h4>
+        <h4>Skills</h4>
+        <h4>Projects</h4>
+        <button id="contact-btn">Contact Me</button>
+    </div>
+
+    <!--main content -->
+    <div class="content">
+        <div class="left">
+            <h1>I am Hooriya , A <span>Creative</span> Frontend Developer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ex, quis libero eum voluptatum, facere
+                hic nam eius voluptatem sapiente blanditiis natus facilis totam nulla.</p>
+            <button id="cvBtn">Download CV</button>
+        </div>
+        <div class="right">
+            <img src="/pic.png" alt="programmer image">
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
