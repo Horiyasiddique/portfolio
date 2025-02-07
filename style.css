@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
     font-family: Freight big pro;
 }
 
@@ -123,16 +123,20 @@ i {
     height: 100%;
     width: 40%;
     background-color: #f2779441;
-    position: absolute;
+    position: fixed;
+    /* Use fixed instead of absolute for better positioning */
     padding: 0vw 2vw;
     top: 0;
     right: -40%;
+    /* Start off-screen */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 7vw;
-    backdrop-filter: bllur(12px);
-
+    backdrop-filter: blur(12px);
+    /* Fix typo in your original CSS */
+    z-index: 1000;
+    /* Ensure it appears above other content */
 }
 
 #full h4 {
@@ -160,7 +164,7 @@ i {
 
 @media (max-width: 600px) {
 
-    body{
+    body {
         overflow-x: hidden;
         max-width: 100vw;
     }
