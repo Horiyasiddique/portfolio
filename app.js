@@ -44,3 +44,18 @@ tl2.from(
   },
   "hi"
 );
+
+//cursor animation
+let cursor = document.querySelector("#cursor");
+let body = document.querySelector('body');
+body.addEventListener("mousemove", (dets) => {
+  gsap.to(cursor, {
+    x: dets.x,
+    y: dets.y,
+    duration: 1,
+    ease: "back.out(1.7)",
+  })
+})
+
+
+

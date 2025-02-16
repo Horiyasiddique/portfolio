@@ -4,24 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Responsiveness</title>
+    <title>Hooriya Siddiqui</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav>
-        <h1>HOORIYA</h1>
-        <div class="part2">
-            <h4>Home</h4>
-            <h4>About Me</h4>
-            <h4>Skills</h4>
-            <h4>Projects</h4>
-            <button id="contact-btn">Contact Me</button>
-            <i class="ri-menu-3-line" id="menu"></i>
-        </div>
-    </nav>
+    <!--custom cursor-->
+    <div id="cursor"></div>
+    <!--bur ball-->
+    <div id="ball1"></div>
+    <div id="ball2"></div>
+    <!--header of my portfolio-->
+    <header>
+        <!--navbar starts here...-->
+        <nav>
+            <h1><b>H</b>ooriya <b>S</b>iddiqui</h1>
+            <div class="part2">
+                <a href="#home">Home</a>
+                <a href="#about-me">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <button id="contact-btn"><span>Contact Me</span></button>
+                <i class="ri-menu-3-line" id="menu"></i>
+            </div>
+        </nav>
+    </header>
 
     <!--sidebar for small devices-->
     <div id="full">
@@ -34,22 +45,179 @@
     </div>
 
     <!--main content -->
-    <div class="content">
-        <div class="left">
-            <h1>I am Hooriya , A <span>Creative</span> Frontend Developer</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ex, quis libero eum voluptatum, facere
-                hic nam eius voluptatem sapiente blanditiis natus facilis totam nulla.</p>
-            <button id="cvBtn">Download CV</button>
-        </div>
-        <div class="right">
-            <img src="/pic.png" alt="programmer image">
-        </div>
-    </div>
+    <main>
+        <!--home page-->
+        <section id="home">
+            <!--left side-->
+            <div class="left">
+                <h1>Building Engaging Interfaces and Crafting Smooth Web Experiences with Precision and
+                    <span>Creativity.</span>
+                </h1>
+                <p>I&apos;m a frontend developer focused on building responsive, user-friendly, and visually engaging
+                    websites.</p>
+                <button id="cvBtn"><span>Download CV</span></button>
+            </div>
+            <!--right side-->
+            <div class="right">
+                <img src="/pic.png" alt="programmer image">
+            </div>
+        </section>
+
+        <!--about me page-->
+        <section id="about-me">
+            <div class="headings">
+                <div class="headings-box"></div>
+                <h2>About Me</h2>
+            </div>
+
+            <p>
+                Hi there! I&apos;m <span>Hooriya Siddiqui</span>, a passionate Frontend Developer dedicated to creating
+                responsive, interactive, and visually stunning web experiences. With expertise in HTML, CSS, JavaScript,
+                TypeScript, GSAP, Locomotive, Barba.js, and Lenis, I transform designs into pixel-perfect, user-friendly
+                interfaces.Constantly learning and growing, I&apos;m currently open to work and excited to collaborate
+                on exciting projects that push the boundaries of frontend development. Let&apos;s create something
+                amazing together!
+
+
+
+
+            </p>
+
+            <div id="icons">
+                <i class="ri-linkedin-box-fill"></i>
+                <i class="ri-github-fill"></i>
+                <i class="ri-facebook-box-fill"></i>
+                <i class="ri-instagram-line"></i>
+            </div>
+        </section>
+
+        <!--skills section page-->
+        <section id="skills">
+            <div class="headings">
+                <div class="headings-box"></div>
+                <h2>Skills</h2>
+            </div>
+            <div class="skills-cont">
+                <div class="skills-cards">
+                    <img src="./assets/html.png" alt="HTML Logo">
+                    <h3>HTML5</h3>
+                    <p>Semantic Structure || SEO</p>
+                </div>
+                <div class="skills-cards">
+                    <img src="./assets/css.png" alt="CSS logo">
+                    <h3>CSS 3</h3>
+                    <p>Styling & Layout || Flexbox & Grid || Media Queries</p>
+                </div>
+            </div>
+
+            <div class="skills-cont">
+                <div class="skills-cards">
+                    <img src="./assets/js.png" alt="JavaScript logo">
+                    <h3>JavaScript</h3>
+                    <p>ES6 || DOM || Asynchronous programming || OOP</p>
+                </div>
+                <div class="skills-cards">
+                    <img src="./assets/gsap.png" alt="GSAP logo">
+                    <h3>GSAP</h3>
+                    <p>Animations & ScrollTrigger</p>
+                </div>
+            </div>
+
+            <div class="skills-cont">
+                <div class="skills-cards">
+                    <img src="./assets/locomotive.png" alt="locomotive.js logo">
+                    <h3>Locomotive.JS</h3>
+                    <p>Smooth Scrolling</p>
+                </div>
+                <div class="skills-cards">
+                    <img src="./assets/barba.png" alt="Barba.JS logo">
+                    <h3>Barba.JS</h3>
+                    <p>Page Transitions</p>
+                </div>
+            </div>
+        </section>
+
+        <!--services section page-->
+        <section id="services">
+            <div class="headings">
+                <div class="headings-box"></div>
+                <h2>What I Offer</h2>
+            </div>
+            <div id="services-cards-cont">
+                <div class="service-cards">
+                    <img src="./assets/dev.png" alt="">
+                    <h3>Frontend Development</h3>
+                    <p>Building sleek, user-friendly interfaces with cutting-edge technologies.</p>
+                </div>
+                <div class="service-cards" style="background-color: #A78BFA;">
+                    <img src="./assets/responsive.png" alt="">
+                    <h3>Responsive Design</h3>
+                    <p>Creating websites that look stunning and function perfectly on all devices from desktops to
+                        smartphones.</p>
+                </div>
+                <div class="service-cards">
+                    <img src="./assets/seo.png" alt="">
+                    <h3>SEO Friendly</h3>
+                    <p>Designing websites optimized for search engines to boost visibility and attract more users.</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--Projects section page-->
+        <section id="projects">
+            <div class="headings">
+                <div class="headings-box"></div>
+                <h2>Projects</h2>
+            </div>
+            <div class="project-cont">
+                <div class="project-cards">
+                    <img src="./assets/project1.jpg" alt="">
+                    <div class="card-part2">
+                        <h4>Sidcup Family Golf</h4>
+                        <button><span>View live <i class="ri-arrow-right-up-line"></i></span></button>
+                    </div>
+                </div>
+                <div class="project-cards">
+                    <img src="./assets/project2.jpg" alt="">
+                    <div class="card-part2">
+                        <h4>Sundown Studio</h4>
+                        <button><span>View live <i class="ri-arrow-right-up-line"></i></span></button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--contact me section page-->
+        <section id="contact">
+            <div class="headings">
+                <div class="headings-box"></div>
+                <h2>Get In Touch</h2>
+            </div>
+
+            <div id="contact-part2">
+                <div id="contact-part2-in">
+                    <h4>Lets Work Together On your Next Project</h4>
+                </div>
+                <form>
+                    <input type="text" placeholder="Insert Your Name">
+                    <input type="email" placeholder="Insert Your Email">
+                    <textarea placeholder="what do you wanna talk about ?" rows="7"></textarea>
+                    <button><span>Send Message</span></button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <script src="app.js"></script>
 </body>
 
